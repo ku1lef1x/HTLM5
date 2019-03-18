@@ -1,0 +1,154 @@
+<!-- 
+DENTRO DE HEAD:
+
+
+1. Etiqueta tittle: va entre las etiquetas head, antes o despues de las meta, indiferentemente.
+        Sirve para cambiar el texto que aparece en la pestaña del navegador, 
+        y tambien sirve para que nuestra pagina aparezca correctamente indexada en los navegadores.
+        Los buscadores tomaran la info contenida en el title para categorizar nuesta pagina
+        en la categoria que mas se identifique.
+        
+        Para que el buscador no nos penalice debe ser una frase corta, descriptiva y en coherencia
+        con el contenido de nuestra web.
+
+2. Etiqueta link: puede ir al final o principio del head pero suele ir justo debajo del tittle
+        no tiene par de cierre. 
+        Sirve para enlazar o incluir elementos adicionales en nuestra pagina web
+        como por ejemplo hojas de estilo, documentos javascript... 
+        REL es un atributo que hace referencia a relativo o relacionado es decir 
+        que tipo de archivo estamos incluyendo
+        HREF seria la referencia del archivo en si, es decir, la ruta en la que se encuentra
+        el archivo. 
+
+
+DENTRO DEL BODY:
+
+**** VER ARCHIVO: Tercera Clase, organizacion etiqueta body.pnh ****
+
+1. Dentro de header:
+
+            a.  h1, h2... sirven para dar tamaño al titulo, h1 mas grande h6 mas chico.
+                Las etiquetas h se utilizan mucho por los buscadores para categorizar nuestra 
+                pagina web
+                Tambien se establece jerarquias, es decir, h1 seria mas importante, que h2 y asi sucesivamente...
+                Cuando tenemos varios h1, h2, referentes al mismo articulo debemos agruparlos entre unas etiquetas <hgroup></hgroup>
+                Si establecemos como titulo de la web un h1, en las noticias y demas articulos debemos establecer como mas grande el h2 y los siguientes ya h3, h4...
+
+2. Dentro de nav(barra navegacion):
+
+            a.  ul: se usan para construir listas desordenadas. Se llaman listas desornadas porque
+                no siguen orden de a,b,c... si no que ponen puntos.                
+                Dentro de ul tenemos las etiquetas <li></li> que incluiremos tantas como 
+                elementos tenga la barra de navegacion. 
+                
+                Podemos sustituir ul por ol en cuyo caso seria una lista ordenada
+
+3. Dentro de aside(barra lateral):
+
+            a.  blockquoute
+
+4. Dentro de section(contenido):
+
+            a.  p: para hacer parrafos
+            b.  article: para agrupar parrafos referidos a lo mismo
+
+5. Dentro de footer (pie de pagina):
+
+        
+
+
+Header y Footer son tremendamente flexibles, es decir, no solo se usan para establecer
+la cabecera o el pie de pagina, sino que tambien, podemos usarlo para establecer, dentro de otras etiquetas, una cabecera o un pie de pagina, ejemplo en el codigo:
+->section
+
+-->
+
+
+<!DOCTYPE html>
+	<html lang = "es">
+	<head>
+		<meta charset = "iso-8559-1" />
+		<meta name = "description" content = "Página de enseñanza html 5"/>
+		<meta name = "keywords" content = "html5, css3, Javascript, diseño web"/>
+        
+        <title>Inicios de programacion en HTML5</title>
+        <link rel = "stylesheet" href="mihojadeestilos.css" />
+        
+	</head>
+        
+	<body>
+        <header> 
+            <h1>Este sería el título de nuestra web</h1>
+            <h4>subtitulo con tamaño h4</h4>            
+        </header>
+        
+        <nav>
+            <ul>
+                <li>Quiénes somos</li>
+                <li>Nuestro productos</li>
+                <li>Contáctanos</li>
+                <li>Precios</li>
+            </ul>
+        </nav>
+        
+        <aside>
+            <blockquote>Primer elemento</blockquote>
+            <blockquote>Segundo elemento</blockquote>
+            <blockquote>Tercer elemento</blockquote>            
+        </aside>
+        
+        <section>
+            <article>
+                <header>
+                    <hgruop>
+                        <h2>Titulo noticia 1</h2>
+                        <h3>Subtitulo noticia 1</h3>
+                    </hgruop>
+                </header>
+                <p>Noticia 1</p>
+                <p>Seguimos hablando de la noticia 1</p>
+                <p>Terminamos la noticia 1</p>
+                <footer>
+                    <p>Comentarios de los usuarios</p>
+                </footer>
+            </article>
+            
+            <article>
+                <header>
+                    <hgroup>
+                        <h2>Titulo noticia 2</h2>
+                        <h3>Subtitulo noticia 2</h3>
+                    </hgroup>
+                </header>
+                <p>Noticia 2</p>
+                <p>Seguimos hablando de la noticia 2</p>
+                <p>Terminamos la noticia 2</p>
+                <footer>
+                    <p>Comentarios de los usuarios</p>
+                </footer>
+            </article>
+            
+            <article>
+                <header>
+                        <hgroup>
+                            <h2>Titulo noticia 3</h2>
+                            <h3>Subtitulo noticia 3</h3>
+                        </hgroup>
+                </header>
+                <p>Noticia 3</p>
+                <p>Seguimos hablando de la noticia 3</p>
+                <p>Terminamos la noticia 3</p>
+                <footer>
+                    <p>Comentarios de los usuarios</p>
+                </footer>
+            </article>            
+        </section>
+        
+        <footer>
+            Derechos reservados. Tfno: 957555555
+        </footer>
+        
+        
+        
+    </body>
+	</html>
